@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo">
+            <nav class="menu">
+                <ul class="links">
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/committees">COMMITTEES</a></li>
+                    <li><a href="/registration">REGISTRATION</a></li>
+                    <li><a href="/ressources">RESSOURCES</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="home">
+        <div class="layer">
+            <h1>SOPHIE GERMAIN MUN 2023</h1>
+            <h2>November 9th, 10th and 11th</h2>
+        </div>
+        <div class="presentation">
+            <img src="{{ url_for('static', filename='img/logo.png') }}">
+            <div class="row">
+                <h1>SOPHIE GERMAIN MODEL UNITED NATIONS 2023</h1>
+                <h2>November 2023</h2>
+                <p>We are thrilled to invite you to the most prestigious Model United</p>
+                <p>Nations conference in Rabat Morocco. The conference will take</p> 
+                <p>place in November at the International School of Sophie Germain. We are</p> 
+                <p>very excited to be able to make this, your best Model UN experience ever.</p>   
+                <p>We will have a variety of delegates from Morocco and the world taking part</p>    
+                <p>in our 11 committees. As always, the health and safety of our staff and</p>     
+                <p class="p1">delegates continues to be a priority. </p>
+            </div>
+        </div>
+        <div class="definition">
+            <h1>What is GERMUN ?</h1>
+            <p>GERMUN is the most prestigious Model United Conference in Morocco. A Model</p>
+            <p>United Nations conference is one in which students from all over the world</p> 
+            <p>take the role of an international delegate of any given country. These delegations</p> 
+            <p>join various committees in order to debate current or recent worldwide issues,</p> 
+            <p>with the purpose of finding viable solutions, much like how the real United Nations</p> 
+            <p class="p1">committees operate.</p>
+        </div>
+    </div>
+</body>
+</html>

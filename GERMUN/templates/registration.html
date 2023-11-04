@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d2130;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo">
+            <nav class="menu">
+                <ul class="links">
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/committees">COMMITTEES</a></li>
+                    <li><a href="/registration">REGISTRATION</a></li>
+                    <li><a href="/ressources">RESSOURCES</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="home">
+        <div class="layer">
+            <h1>SOPHIE GERMAIN MUN 2023</h1>
+            <h2>November 9th, 10th and 11th</h2>
+        </div>
+        <div class="presentation">
+            <form class="registration-form">
+                <h1>Registration</h1>
+                <h2>E-Mail address</h2>
+                <input class="email-entry" maxlength="125" required>
+                <h2>Password</h2>
+                <input class="password-entry" minlength="8" maxlength="32" type="password" required>
+                <h2>Confirm Passowrd</h2>
+                <input class="cpassword-entry" minlength="8" maxlength="32" type="password" required>
+                <div>
+                    <button>Register</button>
+                </div>
+                <p>Already have an account? <a href="/login">Click here.</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
