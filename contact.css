@@ -1,5 +1,98 @@
 body {
     font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 35, 149, 0.75); 
+    filter: blur(15px); 
+    z-index: 1;
+}
+
+.video-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    z-index: 2;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px; /* Adjust the margin-top value as needed */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 35, 149, 0.75); /* Match the color of the video overlay */
+    z-index: 3; /* Ensure the menu bar is above the video overlay */
+}
+
+.video-container::before {
+    content: 'Contact'; /* Added large text on top of the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    font-size: 48px; /*  the font size as needed */
+    z-index: 2;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    cursor: pointer;
+    animation: fadeInDown 1s infinite alternate;
+}
+
+.scroll-down a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+    margin: 0 auto;
+}
+
+.scroll-down a span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact-container {
@@ -10,7 +103,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
+
 
 .contact-container h1 {
     color: #333;
@@ -85,3 +181,57 @@ body {
 .tiktok-button {
     background-image: url('img/tiktok.png');
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 4; 
+    cursor: pointer;
+    animation: fadeInUp 1s infinite alternate;
+}
+
+.back-to-top a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(135deg);
+    margin: 0 auto;
+}
+
+.back-to-top a span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
