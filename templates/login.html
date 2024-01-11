@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0d2130;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -37,18 +32,7 @@
             <h2>November 9th, 10th and 11th</h2>
         </div>
         <div class="presentation">
-            <form class="login-form" method="post">
-                <h1>Login</h1>
-                <h2>E-Mail address</h2>
-                <input class="email-entry" maxlength="125" name="email" required>
-                <h2>Password</h2>
-                <input class="password-entry" minlength="8" maxlength="32" type="password" name="password" required>
-                <div>
-                    <button>Login</button>
-                </div>
-                {{ error_msg | safe }}
-                <p>Don't have an account? <a href="/registration">Click here.</a></p>
-            </form>
+            
         </div>
     </div>
 </body>
