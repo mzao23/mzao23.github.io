@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='img/background.mp4') }}" type="video/mp4">
+        </video>
+        <header>
+            <div class="navbar">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo">
+                <nav class="menu">
+                    <ul class="links">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/committees">COMMITTEES</a></li>
+                        <li><a href="/registration">REGISTRATION</a></li>
+                        <li><a href="/resources">RESSOURCES</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="scroll-down">
+        <a href="#contact-info">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div id="contact-info" class="contact-container">
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+212675815136">+212675815136</a></p>
+            <p><strong>Email:</strong> <a href="mailto:mun@Ifgermain.com">mun@Ifgermain.com</a></p>
+            <p><strong>Address:</strong> Lycée Français Sophie Germain, rue Addalbout, Hay Riad, Rabat</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.202284030437!2d-6.872957923810522!3d33.96163987319133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7132cd3294ac7%3A0x35c7a6d712723a14!2sSchool%20French%20Sophie%20Germain!5e0!3m2!1sen!2sma!4v1703852896180!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+         <div class="contact-buttons">
+            <a href="tel:+212675815136" class="button">Call Us</a>
+            <a href="mailto:mun@Ifgermain.com" class="button">Send Email</a>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/germun_23.24" target="_blank" class="instagram-button"></a>
+            <a href="https://www.tiktok.com/@lfsg_germun" target="_blank" class="tiktok-button"></a>
+        </div>
+    </div>
+
+    <div class="back-to-top">
+        <a href="#top">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background-image: url(img/EIR.jpg);
+    background-size: 130%;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2130;
+  }
+  
+.logo {
+    width: 7%;
+    height: auto;
+    margin: 20px 60px;
+}
+
+.links {
+    list-style: none;
+}
+  
+.links li {
+    display: inline-block;
+    margin: 0 22px;
+    margin-top: 40px;
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.layer {
+    text-align: center;
+    background-color: rgba(0, 35, 149, 0.75);
+}
+
+.layer h1 {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 58px;
+    color: white;
+    padding: 30px 0;
+    letter-spacing: 0.01em;
+}
+
+.layer h2 {
+    font-family: Urbanist;
+    font-weight: 100;
+    font-size: 31px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.presentation{
+    background-color: rgba(0, 25, 51, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation img{
+    width: 18%;
+    height: auto;
+    margin-right: 100px;
+}
+
+.presentation h1{
+    margin-top: 80px;
+    margin-bottom: 7px;
+    font-size: 25px;
+    font-family: Urbanist;
+    font-weight: 600;
+    color: rgb(157, 177, 191);
+}
+
+.presentation h2 {
+    margin-bottom: 17px;
+    font-size: 15px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: rgb(157, 177, 191);
+}
+
+.presentation p {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: rgb(157, 177, 191);
+}
+
+.presentation .p1 {
+    margin-bottom: 100px;
+    font-size: 15px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: rgb(157, 177, 191);
+}
+
+.definition{
+    background-color: rgba(0, 25, 51, 0.75);
+    display: grid;
+    justify-content: center;
+}
+
+.definition h1{
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: Urbanist;
+    font-weight: 500;
+    color: white;
+}
+
+.definition p {
+    margin-bottom: 6px;
+    font-size: 25px;
+    font-family: Urbanist;
+    font-weight: 300;
+    color: rgb(157, 177, 191);
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+
+.definition .p1 {
+    margin-bottom: 100px;
+    font-size: 25px;
+    font-family: Urbanist;
+    font-weight: 300;
+    color: rgb(157, 177, 191);
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+
+.registration-form {
+    background-color: rgba(13, 33, 48, 0.7);
+    margin-top: 40px;
+    margin-bottom: 200px;
+    border-radius: 7px;
+}
+
+.registration-form h1, .registration-form h2, .registration-form h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.registration-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-form div {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-form p, h1, h2, h3, div{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.registration-form input {
+    margin-left: 48px;
+}
+
+.registration-form a {
+    color: white;
+}
+
+.registration-form button {
+    background-color: #21537a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+    cursor: pointer;
+    background-color: #0d2130;
+}
+
+.login-form {
+    background-color: rgba(13, 33, 48, 0.7);
+    margin-top: 40px;
+    margin-bottom: 200px;
+    border-radius: 7px;
+}
+
+.login-form h1, .login-form h2, .login-form h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form div {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form p, h1, h2, h3, div{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.login-form input {
+    margin-left: 43px;
+}
+
+.login-form a {
+    color: white;
+}
+
+.login-form button {
+    background-color: #21537a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    cursor: pointer;
+    background-color: #0d2130;
+}
