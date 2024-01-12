@@ -14,8 +14,9 @@ body {
 .video-container::before {
     width: 100%;
     height: 100%;
-    background: rgba(0, 35, 149, 0.75); 
-    filter: blur(15px); 
+    background: rgba(0, 35, 149, 0.75);
+    backdrop-filter: blur(15px); /* Add backdrop-filter for blur effect */
+    filter: blur(15px); /* Add filter for blur effect */
     z-index: 1;
 }
 
@@ -38,6 +39,15 @@ body {
     color: #fff;
     font-size: 36px;
     z-index: 2;
+}
+
+.background-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 35, 149, 0.75);
+    backdrop-filter: blur(15px);
+    z-index: 1;
 }
 
 video {
@@ -171,4 +181,3 @@ header {
         transform: translateY(0);
     }
 }
-
