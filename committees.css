@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.committees {
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2130;
+}
+
+.logo {
+    width: 7%;
+    height: auto;
+    margin: 20px 60px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 22px;
+    margin-top: 40px;
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.links li a.active {
+    color: rgb(205, 201, 201);
+}
+
+.layer {
+    text-align: center;
+    background-image: url(img/images.jpg);
+    background-size: 110%;
+    background-attachment: fixed;
+}
+
+.layer h1 {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 85px;
+    color: white;
+    padding: 100px 0;
+    letter-spacing: 0.01em;
+}
+
+.layer h2 {
+    font-family: Urbanist;
+    font-weight: 100;
+    font-size: 31px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.column {
+    padding: 5% 0 0 0;
+    display: grid;
+    margin: 0 18%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row1 {
+    padding: 2.5% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    padding: 2.5% 0 0 0;
+}
+
+.row1 img {
+    width: 200px;
+}
+
+.column h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-family: Urbanist;
+    font-weight:700;
+    letter-spacing: 0.01em;
+    color: #133256;
+}
+
+.column p {
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray
+}
