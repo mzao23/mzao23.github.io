@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
+    <style>
+        #countdown {
+            font-family: bold 'Courier New', Courier, monospace;
+            color: white;
+        }
+    </style>
 <body>
   </div>
     <header>
@@ -19,7 +25,7 @@
             <nav class="menu">
             <ul class="links">
                 <li><a href="index.html">HOME</a></li>
-				<li><a href="About.html">ABOUT</a></li>
+		<li><a href="About.html">ABOUT</a></li>
                 <li><a href="Committees.html">COMMITTEES</a></li>
                 <li><a href="Registration.html">REGISTRATION</a></li>
                 <li><a href="Resources.html">RESSOURCES</a></li>
@@ -32,6 +38,7 @@
         <div class="layer">
             <h1>SOPHIE GERMAIN MUN 2024</h1>
             <h2>February 21st, 22nd and 23rd</h2>
+	    <div id="countdown"></div>
         </div>
         <div class="presentation">
             <img src="img/logo.png">
@@ -77,5 +84,29 @@
             <p class="p1">.
         </div>
     </div>
+
+	<script>
+        const targetDate = new Date('2024-02-21T00:00:00Z');
+        
+        function updateCountdown() {
+          const currentDate = new Date();
+          const timeDifference = targetDate - currentDate;
+      
+          if (timeDifference <= 0) {
+            document.getElementById('countdown').innerHTML = '';
+
+          } else {
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+      
+            document.getElementById('countdown').innerHTML = `TIME LEFT BEFORE THE EVENT :  ${days}d ${hours}h ${minutes}m ${seconds}s`;
+          }
+        }
+      
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+      </script>
 </body>
 </html>
