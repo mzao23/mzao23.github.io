@@ -173,7 +173,7 @@ header {
     margin-top: 50px;
 }
 
-.instagram-button, .tiktok-button {
+.instagram-button, .tiktok-button .twitter-button {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -187,7 +187,11 @@ header {
 
 .tiktok-button {
     background-image: url('img/tiktok.png');
+
+.twitter-button {
+    background-image: url('img/twitter.jpg');
 }
+    
 .back-to-top {
     position: fixed;
     bottom: 20px;
