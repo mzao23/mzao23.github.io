@@ -1,105 +1,60 @@
-body {
-    font-family: 'Urbanist', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
-.video-container {
-    position: relative;
-    overflow: hidden;
-    margin-top: 80px;
+.committees {
+    background-color: white;
 }
 
-.video-container::before {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 35, 149, 0.75); 
-    filter: blur(15px); 
-    z-index: 1;
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2130;
 }
 
-.video-container::after {
-    content: "C O N T A C T";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* Color text */
-    font-size: 5em; /* Size text */
-    z-index: 2;
-}
-
-.video-container h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 36px;
-    z-index: 2;
-}
-
-video {
-    width: 100%;
+.logo {
+    width: 7%;
     height: auto;
+    margin: 20px 60px;
 }
 
-.video-container {
-    position: relative;
-    overflow: hidden;
-    margin-top: 80px; /* Adjust the margin-top value as needed */
+.links {
+    list-style: none;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 35, 149, 0.75); /* Match the color of the video overlay */
-    z-index: 3; /* Ensure the menu bar is above the video overlay */
+.links li {
+    display: inline-block;
+    margin: 0 22px;
+    margin-top: 40px;
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 17px;
 }
 
-.video-container::before {
-    content: 'Contact'; /* Added large text on top of the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* Text color */
-    font-size: 48px; /*  the font size as needed */
-    z-index: 2;
+.links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
 }
 
-.scroll-down {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    cursor: pointer;
-    animation: fadeInDown 1s infinite alternate;
+.links li a.active {
+    color: rgb(205, 201, 201);
 }
 
-.scroll-down a {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transform: rotate(-45deg);
-    margin: 0 auto;
+.layer {
+    text-align: center;
+    background-image: url(img/images.jpg);
+    background-size: 110%;
+    background-attachment: fixed;
 }
 
-.scroll-down a span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.layer h1 {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 85px;
+    color: white;
+    padding: 100px 0;
+    letter-spacing: 0.01em;
 }
 
 .contact-container {
