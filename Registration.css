@@ -60,37 +60,6 @@ body {
     margin-top: 20px;
 }
 
-.scroll-down {
-    position: absolute;
-    bottom: 225px; /* Adjust the bottom position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    cursor: pointer;
-    animation: fadeInDown 1s infinite alternate;
-}
-
-.scroll-down a {
-    display: block;
-    width: 24px;
-    height: 40px; /* Adjust the height as needed */
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transform: rotate(-45deg);
-    margin: 0 auto;
-}
-
-.scroll-down a span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .button {
     display: inline-block;
     padding: 10px 20px;
