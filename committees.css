@@ -43,7 +43,7 @@ html {
 
 .layer {
     text-align: center;
-    background-color: #121212;
+    background-color: black;
     opacity: 0.8;
     background-image: url(img/images.jpg);
     background-size: 110%;
