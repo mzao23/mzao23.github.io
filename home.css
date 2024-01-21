@@ -2,14 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.home {
-    background-image: url(img/EIR.jpg);
-    background-size: 130%;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-}
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -20,7 +12,7 @@ html {
 .logo {
     width: 7%;
     height: auto;
-    margin: 20px 60px;
+    margin: 1.25% 3.80%;
 }
 
 .links {
@@ -45,9 +37,18 @@ html {
     color: rgb(205, 201, 201);
 }
 
+.home {
+    background-image: url(img/EIR.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
 .layer {
     text-align: center;
     background-color: rgba(0, 35, 149, 0.75);
+    padding: 40px;
 }
 
 .layer h1 {
@@ -60,6 +61,7 @@ html {
 }
 
 .layer h2 {
+    margin: 0 20%;
     font-family: Urbanist;
     font-weight: 100;
     font-size: 31px;
@@ -67,104 +69,316 @@ html {
     padding-bottom: 30px;
 }
 
-.presentation {
-    background-color: rgba(0, 25, 51, 0.75);
-    padding-top: 50px;
-    padding-left: 25%;
-    padding-right: 25%;
+.column {
+    padding: 2.5% 15%;   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 7px;
 }
 
-.presentation img {
-    width: 32%;
-    height: auto;
-    margin-right:60px;
+.row {
+    align-self: center;
 }
 
-.presentation h1 {
-    margin-bottom: 7px;
-    font-size: 25px;
-    font-family: Urbanist;
-    font-weight: 600;
-    color: rgb(157, 177, 191);
+.row1 img {
+    width: 80%;
 }
 
-.presentation h2 {
-    margin-bottom: 17px;
-    font-size: 15px;
-    font-family: Urbanist;
-    font-weight: 400;
-    color: rgb(157, 177, 191);
+.column h1 {
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-family: Urbanist, sans-serif;
+    font-weight:800;
+    color: #133256;
 }
 
-.presentation p {
+.column p {
     line-height: 1.4;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Urbanist;
     font-weight: 400;
-    color: rgb(157, 177, 191);
+    color: gray;
+    margin-bottom: 3%;
 }
 
-.definition {
-    padding : 40px 23%;
-    background-color: rgba(0, 25, 51, 0.75);
-    display: grid;
+.row .button {
+    display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
-.definition h1 {
-
-    margin-top: 50px;
-    text-align: left;
-    margin-top: 80px;
-    margin-bottom: 15px;
-    font-size: 25px;
+.button a {
+    padding: 13px 27px;
+    font-size: 17px;
     font-family: Urbanist;
     font-weight: 500;
-    color: white;
-}
-
-.definition p {
-    line-height: 1.27;
-    font-size: 23px;
-    font-family: Urbanist;
-    font-weight: 300;
-    color: rgb(157, 177, 191);
-    text-align: left;
-    letter-spacing: 0.05em;
-    word-spacing: 0.4em;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #002395; /* Non-transparent color */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 15px; /* Rounded corners */
-    transition: all 0.5s ease; /* More fluid animation */
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
+    text-align: center;
     text-decoration: none;
-    display: block;
-    transition: background 0.3s ease; /* Smooth background color transition */
+    color: #fff;    
+    background-color: #133256;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.row a:hover {
+    background-color: #3498db;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.dropdown-content a:hover {
-    background-color: #0047ab; /* Change background color on hover */
+.column2-overlay {
+    background-image: url(img/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.column2 {
+    padding: 2.5% 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+.column2 h1 {
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-family: Urbanist, sans-serif;
+    font-weight:800;
+    color: #133256;
+}
+
+.column2 p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 3%;
+}
+
+.column2 p1 {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray;
+}
+
+.column3 {
+    padding: 2.5% 15%;
+    background-color: #f2f2f2;
+}
+
+.column3 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    font-family: Urbanist, sans-serif;
+    font-weight:800;
+    color: #133256;
+}
+
+.row .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.buttons .a {
+    margin: 0 2%;
+    padding: 15px 80px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: Urbanist;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #133256;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .a1 {
+    margin: 0 2%;
+    padding: 15px 80px;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: Urbanist;
+    text-align: center;
+    text-decoration: none;
+    color: #133256;
+    background-color: #ffffff;
+    border: 0px solid #133256;
+    border-radius: 7px ;
+    transition: background-color 0.3s ease;
+}
+
+.row .a1:hover {
+    color: #fff;
+    background-color: #3498db;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.column1 {
+    padding: 0 15% 2.5% 15% ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0;
+    font-size: 33px;
+    font-family: Urbanist, sans-serif;
+    font-weight:500;
+    color: #133256;
+}
+
+.column1 h1 {
+    font-size: 33px;
+    font-family: Urbanist, sans-serif;
+    font-weight:700;
+    color: #133256;
+}
+
+.column1 h2 {
+    font-size: 15px;
+    font-family: Urbanist, sans-serif;
+    font-weight:500;
+    color: #133256;
+    margin-bottom: 3%;
+}
+
+.column1 .row1 img {
+    width: 110%;
+}
+
+.column1 p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 3%;
+}
+
+.competencies-background {
+    background-image: url(img/EIR.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.competencies-overlay {
+    background-color: rgba(13, 33, 48, 0.5);
+}
+
+.competencies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0% 13%;
+}
+
+.competencies .content {
+    background-color: #0d2130;
+    padding: 4em;
+}
+
+.competencies .content h1 {
+    font-size: 15px;
+    font-family: Urbanist, sans-serif;
+    font-weight:500;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.competencies .content h2 {
+    font-size:33px;
+    font-family: Urbanist, sans-serif;
+    font-weight:500;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.competencies .content .competencies-list .competence {
+    margin-bottom: 5%;
+}
+
+.competencies .content .competencies-list .competence h1 {
+    font-size: 25px;
+    font-family: Urbanist, sans-serif;
+    font-weight:800;
+    color: white;
+}
+
+.competencies .content .competencies-list .competence p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: white;
+    margin-left: 3%;
+}
+
+.competencies .content .competencies-list .competence1 h1 {
+    font-size: 25px;
+    font-family: Urbanist, sans-serif;
+    font-weight:800;
+    color: white;
+}
+
+.competencies .content .competencies-list .competence1 p {
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: white;
+    margin-left: 3%;
+}
+
+.end {
+    background-color: black;
+}
+
+.end h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray;
+    padding-top: 2%;
+}
+
+.end a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Urbanist;
+    color: gray;
+}
+
+.end h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: Urbanist;
+    font-weight: 400;
+    color: gray;
+    padding: 2.5% 0 1% 0;
 }
