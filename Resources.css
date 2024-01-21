@@ -114,6 +114,20 @@ body {
     margin-top: 7.5px;
 }
 
+.resource-content {
+    padding: 20px;
+}
+
+.resource-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.resource-content ol, .resource-content ul {
+    text-align: justify;
+    font-size: 24px;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
