@@ -136,3 +136,35 @@ html {
     letter-spacing: 0.05em;
     word-spacing: 0.4em;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002395; /* Non-transparent color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px; /* Rounded corners */
+    transition: all 0.5s ease; /* More fluid animation */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease; /* Smooth background color transition */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0047ab; /* Change background color on hover */
+}
