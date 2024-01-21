@@ -1,0 +1,115 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d2130;
+}
+
+.logo {
+    width: 7%;
+    height: auto;
+    margin: 20px 60px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 22px;
+    margin-top: 40px;
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.links li a.active {
+    color: rgb(205, 201, 201);
+}
+
+.layer {
+    text-align: center;
+    background-image: url(img/images.jpg);
+    background-size: 110%;
+    background-attachment: fixed;
+}
+
+.layer h1 {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 85px;
+    color: white;
+    padding: 100px 0;
+    letter-spacing: 0.01em;
+}
+
+.registration-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #007bb5;
+}
+
+.resources {
+    padding: 20px;
+    text-align: center;
+}
+
+.resource-box p {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.resource-box {
+    display: block;
+    width: 500px;
+    height: 450px;
+    margin: 20px auto;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+.resource-box:hover {
+    transform: scale(1.05);
+}
+
+.resource-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.resource-box p {
+    margin-top: 10px;
+}
