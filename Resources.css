@@ -60,6 +60,17 @@ body {
     margin-top: 20px;
 }
 
+.column {
+    padding: 5% 0 0 0;
+    display: grid;
+    margin: 0 18%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row {
+    padding: 2.5% 0 0 0;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
