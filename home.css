@@ -345,6 +345,55 @@ html {
     margin-left: 3%;
 }
 
+.gallery h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0 1.5% 0;
+    font-size: 44px;
+    font-family: Urbanist, sans-serif;
+    font-weight:500;
+    color: BLACK;
+}
+
+.slider-container {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2.5%;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
 .end {
     background-color: black;
 }
